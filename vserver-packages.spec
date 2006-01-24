@@ -1,11 +1,11 @@
 Summary:	A package providing fake packages for VServer guest system
 Name:		vserver-packages
 Version:	1
-Release:	1
+Release:	1.4
 License:	GPL
 Group:		Base
-Provides:	dev = 3.0.0
-Provides:	devfs
+#Provides:	dev = 3.0.0
+#Provides:	devfs
 Provides:	kernel = 9.9
 Provides:	kernel-smp = 9.9
 Provides:	lvm
@@ -13,12 +13,13 @@ Provides:	lvm2
 Provides:	mingetty
 Provides:	module-init-tools
 Provides:	udev
+Provides:	login
 # Do not put Obsoletes for the following
 # - allows installing of the real package
 Provides:	fsck
 Provides:	iproute2
-Provides:	mount
-Obsoletes:	devfs
+Provides:	mount = 2.12
+#Obsoletes:	devfs
 Obsoletes:	kernel
 Obsoletes:	kernel-smp
 Obsoletes:	lvm
@@ -34,8 +35,6 @@ A package providing a fake packages to allow removal
 of useless packages inside VPS.
 
 %prep
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
