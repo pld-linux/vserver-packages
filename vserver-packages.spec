@@ -2,7 +2,7 @@ Summary:	A package providing fake packages for VServer guest system
 Summary(pl):	Pakiet udostêpniaj±cy fa³szywe pakiety dla systemu go¶cinnego VServera
 Name:		vserver-packages
 Version:	1
-Release:	1.5
+Release:	1.8
 License:	GPL
 Group:		Base
 #Provides:	dev = 3.0.0
@@ -16,6 +16,7 @@ Provides:	module-init-tools
 Provides:	udev
 Provides:	login
 Provides:	klogd
+Provides:	SysVinit = 2.86-4
 # Do not put Obsoletes for the following
 # - allows installing of the real package
 Provides:	fsck
