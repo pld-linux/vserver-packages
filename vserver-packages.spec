@@ -2,13 +2,9 @@ Summary:	A package providing fake packages for VServer guest system
 Summary(pl):	Pakiet udostêpniaj±cy fa³szywe pakiety dla systemu go¶cinnego VServera
 Name:		vserver-packages
 Version:	1
-Release:	1.8
+Release:	2
 License:	GPL
 Group:		Base
-#Provides:	dev = 3.0.0
-#Provides:	devfs
-Provides:	kernel = 9.9
-Provides:	kernel-smp = 9.9
 Provides:	lvm
 Provides:	lvm2
 Provides:	mingetty
@@ -16,13 +12,13 @@ Provides:	module-init-tools
 Provides:	udev
 Provides:	login
 Provides:	klogd
-Provides:	SysVinit = 2.86-4
 # Do not put Obsoletes for the following
 # - allows installing of the real package
 Provides:	fsck
 Provides:	iproute2
 Provides:	mount = 2.12
-#Obsoletes:	devfs
+Provides:	SysVinit = 2.86-4
+Obsoletes:	devfs
 Obsoletes:	kernel
 Obsoletes:	klogd
 Obsoletes:	kernel-smp
