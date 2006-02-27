@@ -19,9 +19,7 @@ Provides:	iproute2
 Provides:	mount = 2.12
 Provides:	SysVinit = 2.86-4
 Obsoletes:	devfs
-Obsoletes:	kernel
 Obsoletes:	klogd
-Obsoletes:	kernel-smp
 Obsoletes:	lvm
 Obsoletes:	lvm2
 Obsoletes:	mingetty
