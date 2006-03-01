@@ -2,22 +2,22 @@ Summary:	A package providing fake packages for VServer guest system
 Summary(pl):	Pakiet udostêpniaj±cy fa³szywe pakiety dla systemu go¶cinnego VServera
 Name:		vserver-packages
 Version:	1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Base
+# Do not put Obsoletes for all of the packages -- allows installing of the real package
+Provides:	SysVinit = 2.86-4
+Provides:	fsck
+Provides:	iproute2
+Provides:	klogd
+Provides:	login
 Provides:	lvm
 Provides:	lvm2
 Provides:	mingetty
 Provides:	module-init-tools
-Provides:	udev
-Provides:	login
-Provides:	klogd
-# Do not put Obsoletes for the following
-# - allows installing of the real package
-Provides:	fsck
-Provides:	iproute2
 Provides:	mount = 2.12
-Provides:	SysVinit = 2.86-4
+Provides:	dev = 2.9.0-19
+Provides:	udev
 Obsoletes:	devfs
 Obsoletes:	klogd
 Obsoletes:	lvm
@@ -25,6 +25,7 @@ Obsoletes:	lvm2
 Obsoletes:	mingetty
 Obsoletes:	module-init-tools
 Obsoletes:	udev
+Obsoletes:	vserver-dev
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
