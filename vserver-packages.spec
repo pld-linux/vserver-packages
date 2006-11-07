@@ -2,7 +2,7 @@ Summary:	A package providing fake packages for VServer guest system
 Summary(pl):	Pakiet udostêpniaj±cy fa³szywe pakiety dla systemu go¶cinnego VServera
 Name:		vserver-packages
 Version:	1
-Release:	5
+Release:	6
 License:	GPL
 Group:		Base
 # Do not put Obsoletes for all of the packages -- allows installing of the real package
@@ -13,7 +13,6 @@ Provides:	iproute2
 # don't provide this one since syslog-ng would obsolete whole package
 # Provides:	klogd
 Provides:	login
-Provides:	lvm
 Provides:	lvm2
 Provides:	mingetty
 Provides:	module-init-tools
