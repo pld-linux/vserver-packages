@@ -1,5 +1,5 @@
 Summary:	A package providing fake packages for VServer guest system
-Summary(pl.UTF-8):   Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
+Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
 Version:	1
 Release:	7
