@@ -1,5 +1,5 @@
 Summary:	A package providing fake packages for VServer guest system
-Summary(pl):	Pakiet udostêpniaj±cy fa³szywe pakiety dla systemu go¶cinnego VServera
+Summary(pl.UTF-8):   Pakiet udostÄ™pniajÄ…cy faÅ‚szywe pakiety dla systemu goÅ›cinnego VServera
 Name:		vserver-packages
 Version:	1
 Release:	7
@@ -36,9 +36,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A package providing a fake packages to allow removal of useless
 packages inside VPS.
 
-%description -l pl
-Pakiet dostarczaj±cy fa³szywe pakiety, aby umo¿liwiæ usuniêcie
-bezu¿ytecznych pakietów z VPS-a.
+%description -l pl.UTF-8
+Pakiet dostarczajÄ…cy faÅ‚szywe pakiety, aby umoÅ¼liwiÄ‡ usuniÄ™cie
+bezuÅ¼ytecznych pakietÃ³w z VPS-a.
 
 %prep
 
