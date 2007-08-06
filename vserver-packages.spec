@@ -1,7 +1,7 @@
 Summary:	A package providing fake packages for VServer guest system
 Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
-Version:	1
+Version:	2
 Release:	7
 License:	GPL
 Group:		Base
@@ -18,13 +18,7 @@ Provides:	module-init-tools
 Provides:	mount = 2.12
 Provides:	udev
 Obsoletes:	devfs
-Obsoletes:	klogd
-Obsoletes:	lvm
-Obsoletes:	lvm2
-Obsoletes:	mingetty
-Obsoletes:	module-init-tools
 Obsoletes:	modutils
-Obsoletes:	udev
 Obsoletes:	vserver-SysVinit
 Obsoletes:	vserver-basesystem
 Obsoletes:	vserver-dev
