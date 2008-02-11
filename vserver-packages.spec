@@ -1,8 +1,12 @@
+# NOTE
+# - here should be rc-scripts dependencies that you don't need inside vserver
+#   (interact with kernel / networking), the rest of the packages can
+#   workarounded in sane way (for example udev + udev-core)
 Summary:	A package providing fake packages for VServer guest system
 Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
-Version:	2
-Release:	8
+Version:	3
+Release:	1
 License:	GPL
 Group:		Base
 # Do not put Obsoletes for all of the packages -- allows installing of the real package
@@ -17,7 +21,6 @@ Provides:	lvm2
 Provides:	mingetty
 Provides:	module-init-tools
 Provides:	mount = 2.12
-Provides:	udev
 Obsoletes:	devfs
 Obsoletes:	modutils
 Obsoletes:	vserver-SysVinit
