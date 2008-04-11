@@ -5,21 +5,21 @@
 Summary:	A package providing fake packages for VServer guest system
 Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
-Version:	3
+Version:	3.1
 Release:	1
 License:	GPL
 Group:		Base
 # Do not put Obsoletes for all of the packages -- allows installing of the real package
 Provides:	dev = 2.9.0-19
-Provides:	fsck
-Provides:	iproute2
+Provides:	fsck = 1.40.4
+Provides:	iproute2 = 2.6.23
 # don't provide this one since syslog-ng would obsolete whole package
 # Provides:	klogd
-Provides:	blockdev
-Provides:	login
-Provides:	lvm2
-Provides:	mingetty
-Provides:	module-init-tools
+Provides:	blockdev = 2.12r
+Provides:	login = 2.12r
+Provides:	lvm2 = 2.01.15
+Provides:	mingetty = 0.9.4
+Provides:	module-init-tools = 3.0
 Provides:	mount = 2.12
 Obsoletes:	devfs
 Obsoletes:	modutils
