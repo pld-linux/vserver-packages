@@ -7,11 +7,11 @@ Summary:	A package providing fake packages for VServer guest system
 Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
 Version:	3.1
-Release:	6
+Release:	7
 License:	GPL
 Group:		Base
 # Do not put Obsoletes for all of the packages -- allows installing of the real package
-Provides:	dev = 2.9.0-22
+Provides:	dev = 3.4-4
 Provides:	fsck = 1.40.10
 Provides:	iproute2 = 2.6.23
 # don't provide this one since syslog-ng would obsolete whole package
