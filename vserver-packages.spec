@@ -2,12 +2,12 @@
 # - here should be rc-scripts dependencies that you don't need inside vserver
 #   (interact with kernel / networking), the rest of the packages can
 #   workarounded in sane way (for example udev + udev-core)
-%define	ul_ver	2.14.1
+%define		ul_ver	2.14.1
 Summary:	A package providing fake packages for VServer guest system
 Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
 Version:	3.1
-Release:	8
+Release:	9
 License:	GPL
 Group:		Base
 # Do not put Obsoletes for all of the packages -- allows installing of the real package
@@ -18,7 +18,7 @@ Provides:	iproute2 = 2.6.23
 # Provides:	klogd
 Provides:	blockdev = %{ul_ver}
 Provides:	login = %{ul_ver}
-Provides:	lvm2 = 2.01.15
+Provides:	lvm2 = 2.02.40
 Provides:	mingetty = 0.9.4
 Provides:	module-init-tools = 3.0
 Provides:	mount = %{ul_ver}
