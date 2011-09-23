@@ -6,7 +6,7 @@
 Summary:	A package providing fake packages for VServer guest system
 Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
-Version:	3.2
+Version:	3.3
 Release:	1
 License:	GPL
 Group:		Base
@@ -18,6 +18,7 @@ Provides:	dev = 3.4-4
 Provides:	ethtool
 Provides:	fsck = 1.40.10
 Provides:	iproute2 = 2.6.23
+Provides:	iputils-arping
 Provides:	libcgroup
 Provides:	login = %{ul_ver}
 Provides:	lvm2 = 2.02.40
