@@ -7,7 +7,7 @@ Summary:	A package providing fake packages for VServer guest system
 Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
 Version:	3.3
-Release:	6
+Release:	7
 License:	GPL
 Group:		Base
 # Do not put Obsoletes for all of the packages -- allows installing of the real package
@@ -56,10 +56,14 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+# TODO
+# rewrite this in -p <lua> so vserver build can go with clean output
+# in initial creation rpm-fake gives error
+# ERROR: ld.so: object '/usr/lib64/util-vserver/rpm-fake.so' from LD_PRELOAD cannot be preloaded: ignored.
 %post
 # remove "ignore = vserver-packages" from poldek config if this package is installed
-if [ -f %{_sysconfdir}/%{name}/poldek.conf ]; then
-	%{__sed} -i -e '/^ignore/s/vserver-packages//' %{_sysconfdir}/%{name}/poldek.conf
+if [ -f /etc/poldek/poldek.conf ]; then
+	%{__sed} -i -e '/^ignore/s/vserver-packages//' /etc/poldek/poldek.conf
 fi
 
 %files
