@@ -56,11 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-# TODO
-# rewrite this in -p <lua> so vserver build can go with clean output
-# in initial creation rpm-fake gives error
-# ERROR: ld.so: object '/usr/lib64/util-vserver/rpm-fake.so' from LD_PRELOAD cannot be preloaded: ignored.
-%post
+%triggerin -- poldek
 # remove "ignore = vserver-packages" from poldek config if this package is installed
 if [ -f /etc/poldek/poldek.conf ]; then
 	%{__sed} -i -e '/^ignore/s/vserver-packages//' /etc/poldek/poldek.conf
