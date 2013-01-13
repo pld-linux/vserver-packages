@@ -7,7 +7,7 @@ Summary:	A package providing fake packages for VServer guest system
 Summary(pl.UTF-8):	Pakiet udostępniający fałszywe pakiety dla systemu gościnnego VServera
 Name:		vserver-packages
 Version:	3.3
-Release:	7
+Release:	8
 License:	GPL
 Group:		Base
 # Do not put Obsoletes for all of the packages -- allows installing of the real package
@@ -24,7 +24,7 @@ Provides:	login = %{ul_ver}
 Provides:	lvm2 = 2.02.83
 Provides:	mingetty = 0.9.4
 Provides:	kmod = 4
-Provides:	module-init-tools = 3.3
+Provides:	module-init-tools = 4.0
 Provides:	mount = %{ul_ver}
 Provides:	virtual(module-tools)
 Obsoletes:	devfs
